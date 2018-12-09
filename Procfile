@@ -1,1 +1,1 @@
-web: node exercicios/primeiroBot.js
+worker: node exercicios/primeiroBot.js
