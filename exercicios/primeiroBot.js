@@ -2,12 +2,13 @@ const env = require('../.env')
 console.log(env.token)
 const Telegraf = require('telegraf')
 
+const API_TOKEN = process.env.API_TOKEN || env.token;
 const PORT = process.env.PORT || 3000;
 const URL = process.env.URL || 'https://rmpcursobot.herokuapp.com/';
 
 const bot = new Telegraf(env.token)
-bot.telegram.setWebhook(`${URL}/bot${env.token}`);
-bot.startWebhook(`/bot${env.token}`, null, PORT)
+bot.telegram.setWebhook(`${URL}/bot${API_TOKEN}`);
+bot.startWebhook(`/bot${API_TOKEN}`, null, PORT)
 
 bot.start(ctx => {
     const from = ctx.update.message.from
