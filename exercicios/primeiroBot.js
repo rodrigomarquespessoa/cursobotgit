@@ -4,10 +4,10 @@ const Telegraf = require('telegraf')
 const express = require('express');
 const expressApp = express();
 
-const API_TOKEN = process.env.API_TOKEN || env.token;
-console.log('tk:' || env.token)
-const PORT = process.env.PORT || 3000;
-const URL = process.env.URL || 'https://rmpcursobot.herokuapp.com/';
+const API_TOKEN = env.token;
+console.log('tk:' + env.token)
+const PORT = 3000;
+const URL = 'https://rmpcursobot.herokuapp.com/';
 
 const bot = new Telegraf(API_TOKEN)
 bot.telegram.setWebhook(`${URL}/bot${API_TOKEN}`);
