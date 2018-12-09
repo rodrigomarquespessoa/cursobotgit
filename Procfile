@@ -1,1 +1,1 @@
-web: node primeirobot.js
+web: node /app/primeirobot.js
