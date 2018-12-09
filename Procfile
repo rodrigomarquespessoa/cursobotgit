@@ -1,1 +1,1 @@
-web: node /app/primeirobot.js
+web: node /exercicios/primeirobot.js
