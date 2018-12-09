@@ -2,7 +2,7 @@ const env = require('../.env')
 console.log(env.token)
 const Telegraf = require('telegraf')
 
-const API_TOKEN = process.env.API_TOKEN || env.token;
+const API_TOKEN = env.token;
 const PORT = process.env.PORT || 3000;
 const URL = process.env.URL || 'https://rmpcursobot.herokuapp.com/';
 
