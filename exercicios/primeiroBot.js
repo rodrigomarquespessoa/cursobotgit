@@ -5,7 +5,7 @@ const express = require('express');
 const expressApp = express();
 
 const API_TOKEN = process.env.API_TOKEN || env.token;
-console.log('tk:' ||API_TOKEN)
+console.log('tk:' || env.token)
 const PORT = process.env.PORT || 3000;
 const URL = process.env.URL || 'https://rmpcursobot.herokuapp.com/';
 
